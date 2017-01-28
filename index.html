@@ -1,49 +1,92 @@
-<!DOCTYPE HTML>
-
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>CEO StockPickingContest</title>
-		
-		<link rel="stylesheet" type="text/css" href="madstylin.css">
-	</head>
-
+<title>Stock Contest 2017</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<style>
+.w3-theme {color:#fff !important;background-color:#4CAF50 !important}
+.w3-btn {background-color:#4CAF50;margin-bottom:4px}
+.w3-code{border-left:4px solid #4CAF50}
+.myMenu {margin-bottom:150px}
+</style>
 <body>
 
-<!-- Putting a Body Container in here -->
-<div id="container">
+<!-- Top -->
+<div class="w3-top">
+  <div class="w3-row w3-white w3-padding">
+    <div class="w3-half" style="margin:4px 0 6px 0"><a href='logo.jpg'><img src='logo.jpg' alt='EvenPrimeLogo'></a></div>
+    <div class="w3-half w3-margin-top w3-wide w3-hide-medium w3-hide-small"><div class="w3-right">THE CEO.CA Stock Picking Contest</div></div>
+  </div>
 
-	<div id="topbanner">
-	<img src="banner.jpg" alt="topbanner" style="width:100%;height:175px"> 
-	</div>
-	
-	<div class="content">
-		<h2>
-		The 2017 Stock Picking Contest Updated Jan 27th, 2017 
-		</h2>
-		
-		<h4>
-			<strong>Highlights:</strong>
-		</h4>
-	
-	 <ul class="bulletless">
-				<li>77% of portfolios are in the positive  [ 114/145 ]</li>
-				<li>&nbsp;&nbsp;&nbsp; *Down 3% from last week </li>
-				<li>&nbsp;</li>
-				<li>51% of portfolios are above 10% return [  74/145 ]</li>
-				<li>&nbsp;&nbsp;&nbsp;	*Up 5% over last week</li>
-				<li>&nbsp;</li>
-				<li>23% of portfolios are above 25% return [  34/145 ]</li>
-				<li>&nbsp;&nbsp;&nbsp;	*Up 6% over last week</li>
-	</ul>
+  <ul class="w3-navbar w3-theme w3-large" style="z-index:4;">
+    <li class="w3-opennav w3-left w3-hide-large">
+      <a class="w3-hover-white w3-large w3-theme w3-padding-16" href="javascript:void(0)" onclick="w3_open()">☰</a>
+    </li>
+    <li class="w3-hide-medium w3-hide-small"><a class="w3-hover-white w3-padding-16" href="javascript:void(0)" onclick="w3_show_nav('menuTut')">LinkedIn</a></li>
+    <li class="w3-hide-medium w3-hide-small"><a class="w3-hover-white w3-padding-16" href="javascript:void(0)" onclick="w3_show_nav('menuRef')">CEO.CA</a></li>
+  </ul>
+</div>
 
-	</div>
+<!-- Sidenav -->
+<nav class="w3-sidenav w3-collapse w3-white w3-animate-left" style="z-index:3;width:270px" id="mySidenav">
+  <div class="w3-hide-large">
+    <a href="javascript:void(0)" onclick="w3_show_nav('menuTut')" class="w3-left w3-theme w3-hover-white w3-padding-16 w3-large" style="width:50%">Tutorials</a>
+    <a href="javascript:void(0)" onclick="w3_show_nav('menuRef')" class="w3-left w3-theme w3-hover-white w3-padding-16 w3-large" style="width:50%">References</a>
+  </div>
+  <div class="w3-clear"></div>
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hide-large" title="close menu">×</a>
+  <div id="menuTut" class="myMenu">
+  <div class="w3-container w3-padding-top">
+    <h3></h3>
+  </div>
+  <a href="stockpickingcontest.html">StockPickingContest</a>
+  <a href="bonuspickshowdown">BonusPickShowDown</a>
+  <a href="safeststockpickingcontest">Safest 2 or 3 Bagger</a>
+  <a href="etf.html">CEO.CA ETF</a>
+  </div>
+  <div id="menuRef" class="myMenu w3-padding-top" style="display:none">
+  <div class="w3-container">
+    <h3></h3>
+  </div>
+  <a href="stockpickingcontest.html">StockPickingContest</a>
+  <a href="bonuspickshowdown">BonusPickShowDown</a>
+  <a href="safeststockpickingcontest">Safest 2 or 3 Bagger</a>
+  <a href="etf.html">CEO.CA ETF</a>
+  </div>
+</nav>
 
-	<div class="content1">
-		
-		
+<!-- Overlay effect when opening sidenav on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
-<table class="tableizer-table">
-<thead><tr class="tableizer-firstrow"><th>USERNAME</th><th>S1NAME</th><th>S1START</th><th>S1 TODAY</th><th>CHANGE %</th><th>S2NAME</th><th>S2START</th><th>S2 TODAY</th><th>CHANGE %</th><th>S3NAME</th><th>S3START</th><th>S3 TODAY</th><th>CHANGE %</th><th>PORTFOLIO GAIN/LOSS</th></tr></thead><tbody>
+<!-- Main content: shift it to the right by 270 pixels when the sidenav is visible -->
+<div class="w3-main w3-container" style="margin-left:270px;margin-top:117px;">
+
+<div class="w3-container w3-section w3-padding-large w3-card-4 w3-light-grey">
+  <h1 class="w3-jumbo">Stock Picking Contest</h1>
+  <p class="w3-xlarge">144 users from CEO.CA chose their top 3 stocks for 2017 </p>
+  <p class="w3-large">
+  <style type="text/css">
+	table.tableizer-table {
+		font-size: 12px;
+		border: 1px solid #CCC; 
+		font-family: Arial, Helvetica, sans-serif;
+	} 
+	.tableizer-table td {
+		padding: 2px,10px,2px,10px;
+		margin: 3px;
+		border: 1px solid #CCC;
+	}
+	.tableizer-table th {
+		background-color: #3EA055; 
+		color: #FFF;
+		font-weight: bold;
+	}
+
+</style>
+
+
+ <table class="tableizer-table">
+<thead><tr class="tableizer-firstrow"><th>USERNAME</th><th>STOCK1</th><th>Jan1</th><th>Jan28</th><th>Diff %</th><th>STOCK2</th><th>Jan1</th><th>Jan28</th><th>Diff %</th><th>STOCK3</th><th>Jan1</th><th>Jan28</th><th>Diff %</th><th>PORTFOLIO GAIN/LOSS</th></tr></thead><tbody>
  <tr><td>RichardBuffet</td><td>AMY.V</td><td>0.230</td><td>0.255</td><td>10.87%</td><td>GLH.CN</td><td>0.355</td><td>0.435</td><td>22.54%</td><td>XMG.CN</td><td>0.490</td><td>1.76</td><td>259.18%</td><td>97.53%</td></tr>
  <tr><td>strakpao</td><td>AMY.V</td><td>0.230</td><td>0.255</td><td>10.87%</td><td>XMG.CN</td><td>0.490</td><td>1.76</td><td>259.18%</td><td>MMS.V</td><td>0.075</td><td>0.09</td><td>20.00%</td><td>96.68%</td></tr>
  <tr><td>BrettCross</td><td>ADZ.V</td><td>0.075</td><td>0.085</td><td>13.33%</td><td>AMY.V</td><td>0.230</td><td>0.255</td><td>10.87%</td><td>XMG.CN</td><td>0.490</td><td>1.76</td><td>259.18%</td><td>94.46%</td></tr>
@@ -190,31 +233,42 @@
  <tr><td>Breccia</td><td>CGD.V</td><td>0.050</td><td>0.05</td><td>0.00%</td><td>FRK.V</td><td>0.900</td><td>0.39</td><td>-56.67%</td><td>ADZ.V</td><td>0.075</td><td>0.085</td><td>13.33%</td><td>-14.44%</td></tr>
  <tr><td>Snoek</td><td>DUST</td><td>48.370</td><td>33.23</td><td>-31.30%</td><td>GDXS</td><td>21.350</td><td>16.75</td><td>-21.55%</td><td>JDST</td><td>35.090</td><td>19.61</td><td>-44.12%</td><td>-32.32%</td></tr>
 </tbody></table>
-	</div>
-
-	<div class="content1">
-		<h2>My Only Issue</h2>
-		
-		<p>BLANK2</p>
-	</div>
-
-	<div id="leftnav">
-		<h2>Internal Links</h2>
-		<p><a href ="index.html">CEO.CA Stock Picking Contest</a></p>
-		<p><a href ="bonuspickshowdown.html">The Bonus Pick Show Down 2017</a></p>
-		<p><a href ="safeststockpickingcontest.html">The Safetest 2 or 3 Bagger Contest 2017</a></p>
-		<p><a href ="etf.html">CEO.CA ETF (Top 18 Picked Stocks)</a></p>
-		<p></p>
-
-
-	</div>
-
-	<div id="rightsponsors">
-<img src="blank.jpg" alt="blank logo"> 
-<img src="blank.jpg" alt="blank logo">
-	</div>
+  <a class="w3-btn w3-hover-white" href="/css/tryit.asp?filename=trycss_default" target="_blank">Try it Yourself</a>
 </div>
 
-</body>
 
+
+<footer class="w3-container w3-section w3-padding-32 w3-card-4 w3-light-grey w3-center w3-opacity">
+  <p><nav>
+  <a href="www.ceo.ca" target="_blank">CEO.CA</a> |
+  <a href="about.html" target="_top">The Creator</a>
+  </nav></p>
+</footer>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+// Script to open and close the sidenav
+function w3_open() {
+    document.getElementById("mySidenav").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidenav").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+function w3_show_nav(name) {
+    document.getElementById("menuTut").style.display = "none";
+    document.getElementById("menuRef").style.display = "none";
+    document.getElementById(name).style.display = "block";
+    w3-open();
+}
+</script>
+<script src="http://www.w3schools.com/lib/w3codecolor.js"></script>
+<script>
+w3CodeColor();
+</script>
+</body>
 </html>
