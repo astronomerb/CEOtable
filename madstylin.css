@@ -1,0 +1,168 @@
+/* html rules
+--------------------*/
+
+body {
+	background-color: #525564;
+	margin: 20px;
+	padding: 0;
+	font-size: 1.1em;
+	font-family: verdana,arial,helvetica,sans-serif;
+	}
+
+h1 {
+	font-family: verdana,arial,helvetica,sans-serif;
+	margin: 0 0 15px 0;
+	padding: 0;
+	color: #888;
+	}
+	
+h2 {
+	font-family: verdana,arial,helvetica,sans-serif;
+	margin: 0 0 5px 0;
+	padding: 0;
+	color: #274;
+	font-size: 1.1em;
+	}
+
+	
+p {
+	font-family: verdana,arial,helvetica,sans-serif;
+	line-height: 1.2em;
+	margin: 0 0 16px 0;
+	padding: 0;
+	}
+	
+a {
+	color: teal;
+	font-family: verdana,arial,helvetica,sans-serif;
+	font-weight: bold;
+	text-decoration: none;
+	}
+	
+a:link {
+	color: teal;
+	}
+	
+a:visited {
+	color: teal;
+	}
+
+a:hover {
+	background-color: #bbb;
+	}
+
+	
+/*--------------------------------------------------------------------------------*/
+/*-------------------Class and ID Rules-------------------------------------------*/
+/*--------------------------------------------------------------------------------*/
+
+/* Currently just using One content so I could have used an ID but might duplicate later */
+.content {
+	position: relative;
+	margin: 213px 250px 10px 195px; /*Top Right Bottom Left - relative to last positional thing*/
+	border: 2px double;;
+	background-color: white;
+	padding: 10px;
+	min-width:1000;
+	z-index: 2;
+	}
+
+	
+.content1 {
+	position: relative;
+	margin: 0px 250px 10px 195px; /*Top Right Bottom Left - relative to last positional thing*/
+	border: 2px double;;
+	background-color: white;
+	padding: 10px;
+	min-width:1000;
+	z-index: 1;
+	}
+	
+	
+
+#container {
+	position:absolute;
+	left: 0px;	
+	right: 0px;
+	min-width:1500px;
+}
+
+#topbanner {
+	position: absolute;
+	width: 100%;
+	top: 0px;
+	border: 2px double;
+	background-color: #74828F;
+	padding: 10px;
+	z-index: 5;
+}
+
+#leftnav {
+	position: absolute;
+	width: 148px;
+	top: 215px;
+	left: 20px;
+	font-size: 10pt;
+	border: 1px double black;
+	background-color: white;
+	padding: 10px;
+	z-index: 3;
+	}
+
+#rightsponsors {
+	position: absolute;
+	width: 245px;
+	top: 215px;
+	right: 0px;
+	border: 1px double black;
+	background-color: #eee;
+	padding: 0px;
+	z-index: 3;
+	}
+	
+/* TABLE INFORMATION */
+
+	table.tableizer-table {
+		font-size: 12px;
+		border: 1px solid #CCC; 
+		font-family: Arial, Helvetica, sans-serif;
+	} 
+	.tableizer-table td {
+		padding: 4px;
+		margin: 3px;
+		border: 1px solid #CCC;
+	}
+	.tableizer-table th {
+		background-color: #104E8B; 
+		color: #FFF;
+		font-weight: bold;
+	}
+	
+/* SMALLER TABLE INFORMATION */
+	table.tableizer-table1 {
+		font-size: 12px;
+		border: 1px solid #CCC; 
+		font-family: Arial, Helvetica, sans-serif;
+	} 
+	.tableizer-table1 td {
+		padding: 4px;
+		margin: 3px;
+		border: 1px solid #CCC;
+	}
+	.tableizer-table1 th {
+		background-color: #4CC552; 
+		color: #FFF;
+		font-weight: bold;
+	}
+	
+	
+	
+	
+/* Bulletless in Unordered Items */
+	  .bulletless {
+                list-style-type: none;
+            }	
+
+	
+	
+	
