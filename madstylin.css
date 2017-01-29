@@ -1,89 +1,10 @@
-/* html rules
---------------------*/
-
-body {
-	background-color: #525564;
-	margin: 20px;
-	padding: 0;
-	font-size: 1.1em;
-	font-family: verdana,arial,helvetica,sans-serif;
-	}
-
-h1 {
-	font-family: verdana,arial,helvetica,sans-serif;
-	margin: 0 0 15px 0;
-	padding: 0;
-	color: #888;
-	}
-	
-h2 {
-	font-family: verdana,arial,helvetica,sans-serif;
-	margin: 0 0 5px 0;
-	padding: 0;
-	color: #274;
-	font-size: 1.1em;
-	}
-
-	
-p {
-	font-family: verdana,arial,helvetica,sans-serif;
-	line-height: 1.2em;
-	margin: 0 0 16px 0;
-	padding: 0;
-	}
-	
-a {
-	color: teal;
-	font-family: verdana,arial,helvetica,sans-serif;
-	font-weight: bold;
-	text-decoration: none;
-	}
-	
-a:link {
-	color: teal;
-	}
-	
-a:visited {
-	color: teal;
-	}
-
-a:hover {
-	background-color: #bbb;
-	}
-
-	
-/*--------------------------------------------------------------------------------*/
-/*-------------------Class and ID Rules-------------------------------------------*/
-/*--------------------------------------------------------------------------------*/
-
-/* Currently just using One content so I could have used an ID but might duplicate later */
-.content {
-	position: relative;
-	margin: 213px 250px 10px 195px; /*Top Right Bottom Left - relative to last positional thing*/
-	border: 2px double;;
-	background-color: white;
-	padding: 10px;
-	min-width:1000;
-	z-index: 2;
-	}
-
-	
-.content1 {
-	position: relative;
-	margin: 0px 250px 10px 195px; /*Top Right Bottom Left - relative to last positional thing*/
-	border: 2px double;;
-	background-color: white;
-	padding: 10px;
-	min-width:1000;
-	z-index: 1;
-	}
-	
-	
 
 #container {
 	position:absolute;
 	left: 0px;	
 	right: 0px;
+	top: 0px;
+	bottom: 0px;
 	min-width:1500px;
 }
 
@@ -91,33 +12,73 @@ a:hover {
 	position: absolute;
 	width: 100%;
 	top: 0px;
-	border: 2px double;
-	background-color: #74828F;
-	padding: 10px;
+	background-color: #FEFCFF;   /*FEFCFF*/
+	padding: 0px;
 	z-index: 5;
 }
+#banner2 {
+	position: relative;
+	width: 100%;
+	top: 60px;
+	height:50px;
+	background-color: #4CAF50;
+	padding: 0px;
+	z-index: 1;
+}
+	
+/*--------------------------------------------------------------------------------*/
+/*-------------------Class and ID Rules-------------------------------------------*/
+/*--------------------------------------------------------------------------------*/
+
+/* Currently just using One content so I could have used an ID but might duplicate later */
+.content {
+ 	position: relative; 
+	margin: 65px 250px 10px 195px; /*Top Right Bottom Left - relative to last positional thing*/
+/*	border: 2px double; */
+	background-color: white;
+	padding: 10px;
+	min-width:800;
+	z-index: 2;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+
+	
+.content1 {
+	position: relative; 
+	margin: 0px 250px 10px 195px; /*Top Right Bottom Left - relative to last positional thing*/
+/*	border: 2px double; */
+	background-color: white;
+	padding: 10px;
+	min-width:800;
+	z-index: 1;
+	box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);	
+	}
+	
+	
 
 #leftnav {
-	position: absolute;
-	width: 148px;
-	top: 215px;
-	left: 20px;
+	position: absolute; 
+	width: 170px;
+	top: 115px;
+	left: 0px;
 	font-size: 10pt;
-	border: 1px double black;
+/*	border: 1px double black; */
 	background-color: white;
 	padding: 10px;
 	z-index: 3;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);		
 	}
 
 #rightsponsors {
-	position: absolute;
+	position: absolute; 
 	width: 245px;
-	top: 215px;
+	top: 115px;
 	right: 0px;
-	border: 1px double black;
+/*	border: 1px double black; */
 	background-color: #eee;
 	padding: 0px;
 	z-index: 3;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);		
 	}
 	
 /* TABLE INFORMATION */
@@ -133,7 +94,7 @@ a:hover {
 		border: 1px solid #CCC;
 	}
 	.tableizer-table th {
-		background-color: #104E8B; 
+		background-color: #489E4C; 
 		color: #FFF;
 		font-weight: bold;
 	}
@@ -150,7 +111,7 @@ a:hover {
 		border: 1px solid #CCC;
 	}
 	.tableizer-table1 th {
-		background-color: #4CC552; 
+		background-color: #489E4C; 
 		color: #FFF;
 		font-weight: bold;
 	}
@@ -164,5 +125,67 @@ a:hover {
             }	
 
 	
+/* html rules
+----------------------------------------------------------*/
+
+body {
+	background-color: #FEFCFF;
+	margin: 0;
+	padding: 0;
+	font-size: 1.1em;
+	font-family: verdana,arial,helvetica,sans-serif;
+	}
+
+h1 {
+	font-family: verdana,arial,helvetica,sans-serif;
+	margin: 0 0 15px 0;
+	padding: 0;
+    color: white;
+    text-shadow: 1px 1px 2px #4CAF50, 0 0 25px #4CAF50, 0 0 5px #4CAF50;
+}	
+	
+	
+h2 {
+	font-family: verdana,arial,helvetica,sans-serif;
+	margin: 0 0 5px 0;
+	padding: 0;
+	color: #274;
+	font-size: 1.1em;
+	}
+h3 {
+	font-family: verdana,arial,helvetica,sans-serif;
+	margin: 0 0 5px 0;
+	padding: 0;
+    color: white;
+    text-shadow: 6px 6px 12px #459648, 0 0 25px #459648, 0 0 5px #459648;
+	}
+	
+p {
+	font-family: verdana,arial,helvetica,sans-serif;
+	line-height: 1.2em;
+	margin: 0 0 16px 0;
+	padding: 0;
+	}
+	
+a {
+	color: teal;
+	font-family: verdana,arial,helvetica,sans-serif;
+/*	font-weight: bold; */
+	text-decoration: none;
+	}
+	
+a:link {
+	color: teal;
+	}
+	
+a:visited {
+	color: teal;
+	}
+
+a:hover {
+	background-color: #bbb;
+	}
+
+
 	
 	
