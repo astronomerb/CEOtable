@@ -159,7 +159,15 @@ h3 {
     color: white;
     text-shadow: 6px 6px 12px #459648, 0 0 25px #459648, 0 0 5px #459648;
 	}
-	
+
+h4 {
+	font-family: verdana,arial,helvetica,sans-serif;
+	margin: 0 0 5px 0;
+	padding: 0;
+    color: white;
+    text-shadow: 6px 6px 12px #459648, 0 0 25px #459648, 0 0 5px #459648;
+	}
+
 p {
 	font-family: verdana,arial,helvetica,sans-serif;
 	line-height: 1.2em;
