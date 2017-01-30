@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Varela+Round);
 
 #container {
 	position:absolute;
@@ -122,9 +123,24 @@
 /* Bulletless in Unordered Items */
 	  .bulletless {
                 list-style-type: none;
+				font-family:"Varela Round",arial,helvetica,sans-serif;
+				color: #274;
             }	
+	  .bulletless1 {
+                list-style-type: none;
+				font-family:"Varela Round",arial,helvetica,sans-serif;
+				color: #5b7b9b;
+            }	
+/* Image Container to put pics side by side */
+.imgContainer{
+    float:left;
+	border: 1px solid #4CAF50;
+	margin-top: 0px;
+    margin-right: 150px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+}	
 
-	
 /* html rules
 ----------------------------------------------------------*/
 
@@ -133,11 +149,11 @@ body {
 	margin: 0;
 	padding: 0;
 	font-size: 1.1em;
-	font-family: verdana,arial,helvetica,sans-serif;
+	font-family:"Varela Round",arial,helvetica,sans-serif;
 	}
 
 h1 {
-	font-family: verdana,arial,helvetica,sans-serif;
+	font-family: "Varela Round",arial,helvetica,sans-serif;
 	margin: 0 0 15px 0;
 	padding: 0;
     color: white;
@@ -146,14 +162,14 @@ h1 {
 	
 	
 h2 {
-	font-family: verdana,arial,helvetica,sans-serif;
+	font-family: "Varela Round",arial,helvetica,sans-serif;
 	margin: 0 0 5px 0;
 	padding: 0;
 	color: #274;
 	font-size: 1.1em;
 	}
 h3 {
-	font-family: verdana,arial,helvetica,sans-serif;
+	font-family: "Varela Round",arial,helvetica,sans-serif;
 	margin: 0 0 5px 0;
 	padding: 0;
     color: white;
@@ -161,7 +177,7 @@ h3 {
 	}
 
 h4 {
-	font-family: verdana,arial,helvetica,sans-serif;
+	font-family: "Varela Round",arial,helvetica,sans-serif;
 	margin: 0 0 5px 0;
 	padding: 0;
     color: white;
@@ -169,7 +185,7 @@ h4 {
 	}
 
 p {
-	font-family: verdana,arial,helvetica,sans-serif;
+	font-family:"Varela Round",arial,helvetica,sans-serif;
 	line-height: 1.2em;
 	margin: 0 0 16px 0;
 	padding: 0;
@@ -177,13 +193,13 @@ p {
 	
 a {
 	color: teal;
-	font-family: verdana,arial,helvetica,sans-serif;
+	font-family: "Varela Round",arial,helvetica,sans-serif;
 /*	font-weight: bold; */
 	text-decoration: none;
 	}
 	
 a:link {
-	color: teal;
+	color: blue;
 	}
 	
 a:visited {
