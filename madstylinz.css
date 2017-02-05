@@ -78,7 +78,7 @@ body {
 /* Currently just using One content so I could have used an ID but might duplicate later */
 .content {
  	position: relative; 
-	margin: 170px -260px 10px 265px; /*Top Right Bottom Left - relative to last positional thing*/
+	margin: 170px -0px 10px 265px; /*Top Right Bottom Left - relative to last positional thing*/
 /*	border: 2px double;  */
 	background-color: #3e94ec;
 	padding: 10px;
@@ -97,7 +97,7 @@ body {
 
 .content1 {
 	position: relative; 
-	margin: 0px -260px 10px 265px; /*Top Right Bottom Left - relative to last positional thing*/
+	margin: 0px -0px 10px 265px; /*Top Right Bottom Left - relative to last positional thing*/
 /*	border: 2px double;  */
 	background-color: #3e94ec;
 	padding: 0px;
