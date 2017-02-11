@@ -1,6 +1,6 @@
-@import url(http://fonts.googleapis.com/css?family=Varela+Round);
+/* @import url(http://fonts.googleapis.com/css?family=Varela+Round); */
 
-
+/* Main container covers entire page to assist with relative and absolute positioning */
 #container {
 	position:absolute;
 	left: 0px;	
@@ -39,8 +39,8 @@ body {
 
 #leftnav {
 	position: absolute; 
-	width: 270px;
-	top: 63px;
+	width: 214px;
+	top: 45px;
 	left: 0px;
 	font-size: 10pt;
 	border: 1px double black; 
@@ -49,9 +49,11 @@ body {
 	z-index: 3;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);		
 	}
+	
+	
 /*---------------------------------------------------*/
 /*---------------------------------------------------*/
-/*---------Right Navigation Bar----------------------*/
+/*---------Right Navigation Bar--DNE-----------------*/
 /*---------------------------------------------------*/
 /*---------------------------------------------------*/		
 
@@ -63,7 +65,6 @@ body {
 /*---------------------------------------------------*/	
 
 
-/* Currently just using One content so I could have used an ID but might duplicate later */
 .content {
  	position: relative; 
 	margin: 63px -0px 10px 265px; /*Top Right Bottom Left - relative to last positional thing*/
@@ -79,7 +80,7 @@ body {
 
 /*---------------------------------------------------*/
 /*---------------------------------------------------*/
-/*---------Content1 (Tables)-------------------------*/
+/*---------Content1 (For Data Tables)----------------*/
 /*---------------------------------------------------*/
 /*---------------------------------------------------*/		
 
@@ -123,21 +124,13 @@ body {
 /*---------------------------------------------------*/
 /*---------------------------------------------------*/
 /*---------4 Bubbles with Statistics-----------------*/
-/*-----------All in 1 Main Container-----------------*/
+/*-----------All in a table--------------------------*/
 /*---------------------------------------------------*/
-#bubbles {
-
-    width: 925px;
-	height: 250px;
-    background-color: #932424;
-    margin: auto;
-    padding: 10px; 
-}
 
 
 /*------------------------FIRST BUBBLE-----------------------------------------*/
 
-#firstbubble {
+.firstbubble {
     width: 425px;
     float: left;
     height: 100px;
@@ -152,12 +145,12 @@ body {
 	text-align: center;
 	
 }
-#firstbubble:hover  {
+.firstbubble:hover  {
   background: linear-gradient(#777575, #FFFFFF);       /* Teal (#97e4eb, #247169); */
   color:#FFFFFF;
 
 }
-#firstbubble h3 {
+.firstbubble h3 {
    color: #3F3F3F;
    font-size:20px;
    font-weight:400;
@@ -166,7 +159,7 @@ body {
    text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
    text-transform:uppercase;	
 }
-#firstbubble h4 {
+.firstbubble h4 {
    color: #3F3F3F;
    font-size:15px;
    font-weight:400;
@@ -180,7 +173,7 @@ body {
 
 /*-------------------------SECOND BUBBLE------------------------------------------*/
 
-#secondbubble {
+.secondbubble {
     width: 425px;
     float: right;
     height: 100px;
@@ -197,12 +190,12 @@ body {
 
 }
 
-#secondbubble:hover  {
+.secondbubble:hover  {
   background: linear-gradient(#777575, #FFFFFF);
   color:#FFFFFF;
 }
 
-#secondbubble h3 {
+.secondbubble h3 {
    color: #3F3F3F;
    font-size:20px;
    font-weight:400;
@@ -211,7 +204,7 @@ body {
    text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
    text-transform:uppercase;	
 }
-#secondbubble h4 {
+.secondbubble h4 {
    color: #3F3F3F;
    font-size:15px;
    font-weight:400;
@@ -236,7 +229,7 @@ body {
 a {
    text-decoration: none;
    color: #FFFFFF;
-   font-size:15px;
+   font-size:12px;
    font-weight:400;
    font-style:normal;
    font-family: "Roboto", helvetica, arial, sans-serif;
@@ -249,18 +242,27 @@ a:hover  {
  color: black;
 }
 
-
-h3 {
-   color: #FFFFFF;
-   font-size:20px;
+h2 {
+   color: #262626;
+   font-size:25px;
    font-weight:400;
    font-style:normal;
    font-family: "Roboto", helvetica, arial, sans-serif;
    text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
-   text-transform:uppercase;	
+ /*  text-transform:uppercase;	 */
 }
+
+h3 {
+   color: #262626;
+   font-size:10px;
+   font-weight:400;
+   font-style:normal;
+   font-family: "Roboto", helvetica, arial, sans-serif;
+   text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+}
+
 h4 {
-   color: #FFFFFF;
+   color: #262626;
    font-size:15px;
    font-weight:400;
    font-style:normal;
@@ -280,6 +282,22 @@ img.center {
 /*---------TABLE INFORMATION ------------------------*/
 /*---------------------------------------------------*/
 /*---------------------------------------------------*/
+
+
+/* This table is for the Bubble Statistic Information*/
+[title~=positive] {
+  background:#932424;
+  padding:  0pt;                                    /* Orig 6px;  */
+  text-align:center;
+  vertical-align:middle;
+  border: none;
+}
+
+#table1 {
+ margin: auto;
+}
+
+/* Everything from here down is for the Data Tables  */
 
 div.table-title {
    display: block;
