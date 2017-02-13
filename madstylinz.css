@@ -1,6 +1,13 @@
 /* @import url(http://fonts.googleapis.com/css?family=Varela+Round); */
 
 /* Main container covers entire page to assist with relative and absolute positioning */
+/* The Tables were created using an Excel spreadsheet and converted to HTML using     */
+/* http://tableizer.journalistopia.com/tableizer.php thanks to Danny Sanchez          */
+/*                                                                                    */
+/* The CSS themes for the tables were adapted from                                    */
+/* http://codepen.io/alassetter/full/cyrfB -------------------------------------------*/
+
+
 #container {
 	position:absolute;
 	left: 0px;	
