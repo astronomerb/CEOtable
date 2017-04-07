@@ -47,7 +47,7 @@ body {
 #leftnav {
 	position: absolute; 
 	width: 214px;
-	top: 65px;
+	top: 110px;
 	left: 0px;
 	font-size: 10pt;
 	border: 1px double black; 
@@ -74,7 +74,7 @@ body {
 
 .content {
  	position: relative; 
-	margin: 63px -0px 10px 265px; /*Top Right Bottom Left - relative to last positional thing*/
+	margin: 100px -0px 10px 265px; /*Top Right Bottom Left - relative to last positional thing*/
 /*	border: 2px double;  */
 	background-color: #932424;
 	padding: 10px;
@@ -317,6 +317,11 @@ h4 {
    font-family: "Roboto", helvetica, arial, sans-serif;
    text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
    text-transform:uppercase;	
+}
+
+#logo {
+	height: 73pt;
+	width:	100pt;
 }
 
 img.center {
